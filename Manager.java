@@ -20,6 +20,7 @@ public class Manager extends Application {
 	
 	// Create menus
 	private MainMenuGUI mainMenu = new MainMenuGUI();
+	//private DiagnosisPageGUI diagnosisPage = new DiagnosisPageGUI();
 	
 	//Constructor
 	public Manager() throws Exception {

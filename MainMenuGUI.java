@@ -28,7 +28,7 @@ public class MainMenuGUI extends Pane {
 		//Create pane label
 		Label mainMenuLabel = new Label("Main Menu");
 		mainMenuLabel.setFont(new Font("Arial Rounded MT Bold", 30));
-		mainMenuLabel.setLayoutX(30);
+		mainMenuLabel.setLayoutX(90);
 		mainMenuLabel.setLayoutY(20);
 		
 		//Add elements to pane
