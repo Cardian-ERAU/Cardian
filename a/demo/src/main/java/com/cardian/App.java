@@ -15,9 +15,15 @@ public class App extends Application {
 
     private static Scene scene;
 
+    public int screenWidth = 325;
+    public int aspectRatioY = 2; // height
+    public int aspectRatioX = 1; // width
+    public int screenHeight = (screenWidth / aspectRatioX) * aspectRatioY;
+
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 640, 480);
+        screenWidth = 325;
+        scene = new Scene(loadFXML("primary"), screenWidth, screenHeight);
         stage.setScene(scene);
         stage.show();
     }
