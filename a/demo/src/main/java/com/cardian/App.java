@@ -1,5 +1,14 @@
 package com.cardian;
 
+// **************************************
+// Cardian
+// By Zechariah Lea, Gabriel Lindo, Knox Peterson, Ashley Young
+// For SE 300, Section 01DB (Prof. Towhidnejad)
+// Class:  App
+//
+// Main class of the program, manages the entire application.
+// **************************************
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -15,16 +24,17 @@ public class App extends Application {
 
     private static Scene scene;
 
-    public int screenWidth = 325;
+    public int screenWidth = 300;
     public int aspectRatioY = 2; // height
     public int aspectRatioX = 1; // width
     public int screenHeight = (screenWidth / aspectRatioX) * aspectRatioY;
 
     @Override
     public void start(Stage stage) throws IOException {
-        screenWidth = 325;
-        scene = new Scene(loadFXML("primary"), screenWidth, screenHeight);
+        scene = new Scene(loadFXML("mainmenu"), screenWidth, screenHeight);
         stage.setScene(scene);
+        stage.setTitle("Cardian");
+        stage.setResizable(false);
         stage.show();
     }
 
