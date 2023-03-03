@@ -31,7 +31,10 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("mainmenu"), screenWidth, screenHeight);
+        Parent root = FXMLLoader.load(getClass().getResource("mainmenu.fxml"));
+        // scene = new Scene(root, screenWidth, screenHeight); //If we want to set a
+        // different window size
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("Cardian");
         stage.setResizable(false);
