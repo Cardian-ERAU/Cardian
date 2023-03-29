@@ -19,6 +19,7 @@ public class CheckboxController {
     public void initialize() {
         List<String> data = loadDataFromFile("assets\\checklist.txt"); // list.txt being the file of every thing of the checkbox
 
+        // this is a comment to show how to commit
         for (String str : data) {
             CheckBox checkboxx = new CheckBox(str);
             checkboxx.setSelected(false);
