@@ -21,7 +21,7 @@
             </Label>
             <ImageView fitHeight="60.0" fitWidth="59.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../assets/cardian.png" />
+                  <Image url="@../../../../assets/cardian.png" />
                </image>
             </ImageView>
             <MenuButton layoutX="223.0" layoutY="38.0" mnemonicParsing="false" text="Menu">
