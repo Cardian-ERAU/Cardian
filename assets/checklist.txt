@@ -1,0 +1,162 @@
+Run and print Carfax Vehicle History Report and attach
+Run a Techstream Health Check and retain the diagnostic report in dealer file
+Check for and perform outstanding Recalls and applicable SSCs
+Cold engine operation performs properly
+Throttle operates properly during cold start
+Vehicle operates properly during warm-up conditions
+Engine performs properly during operating temperature
+Engine reaches normal operating temperature
+Engine fan(s) operate properly
+Brake pedal free play and travel within specifications
+No abnormal vibrations and noises during brake applications
+ABS operates properly (via Techstream Health Check)
+Parking brake operates properly and within specification
+Seat belt material condition
+Seat belts operate properly with full extension and smooth operation
+Transmission/clutch operates smoothly
+Automatic transmission operates properly during cold temperature
+Automatic transmission operates properly during operating temperature
+Steering has normal feel in lock-to-lock turning
+Steering wheel centered in straight-line driving
+Vehicle tracks and drives straight on level surface
+Tilt and telescopic steering mechanism operates properly
+Front windshield wiper operates properly in all modes
+Rear windshield wiper operates properly in all modes
+Windshield washer fluid sprays properly
+Replace wiper blade/inserts and ensure clear glass properly
+Wipers return to correct position when off
+Speedometer functions properly
+Odometer application registers mileage in every mode
+Cruise control operates properly
+Heater operates properly
+A/C operates properly
+No abnormal noise or vibration from engine
+No excessive wind or road noise
+No abnormal tire vibration/steering wheel shimmy during road test
+No abnormal squeaks/rattles within the interior of the vehicle
+Frame/Unibody condition
+Panel alignment and fit
+Lower body and underbody condition
+Suspension-related items for wear/leaks and proper performance
+Inspect struts/shocks for leaks and wear
+Power steering system operates properly with no leaks
+Wheel covers secure and reasonably free of damage
+Tires are inflated to specification and free of defects and damage
+Minimum of 5/32" tread depth remaining across tread width
+All four tires must be of same brand, model, size, tread design, speed and load rating per OEM vehicle specifications
+Brake calipers and lines operate properly with no signs of damage
+The brake system contains all needed equipment (shim kit, pins, rattle clips, etc.)
+Brake pad/shoe linings have a minimum thickness of 50% remaining
+Brake rotors/drums within specifications with no abnormal grooving and discoloration
+Exhaust system is properly secured with no leaks
+Engine/transmission mounts operate properly with no signs of wear
+Drive/axle shafts operate properly with no damage
+CV joints/boots operate properly with no signs of wear
+Inspect engine for fuel, oil, coolant or other fluid leaks
+Inspect transmission case and pan for leaks
+Differential fluid level correct with no leaks
+Perform emissions test and/or state inspection, if required
+Drive belts and hoses free of cracks and damage
+Confirm under-hood labels and decals
+Air filter in good condition
+Battery has no visible damage
+Perform battery check with Midtronics GR8
+Battery posts and cables free of corrosion and damage
+Battery properly sized and secure
+Charging system operating properly and within specification
+Engine coolant level within specification
+Coolant specific gravity to -31° Fahrenheit
+Change engine oil and filter
+Check for evidence of oil gel
+Oil, brake, clutch, transmission, transfer case, power steering and washer fluid at proper levels
+Under-hood fluids clear and uncontaminated
+Owner’s Manual and TCUV Warranty Supplement in dealer’s possession
+Fuel gauge operational
+Battery voltage gauge operational
+Engine temperature gauge operational
+Horn operates properly
+Airbag(s) present with no evidence of deployment
+Headlights are properly aligned
+High and low beams operate properly
+Tail lights operate properly
+Brake lights operate properly
+Side marker lights operate properly
+Backup lights operate properly
+License plate lights operate properly
+No cracked, deeply hazed/yellowed or broken lenses of exterior lights
+Instrument panel/warning lights operate properly
+HVAC panel/lights operate properly
+Instrument panel light dimmer operates properly
+Turn signals operate properly and self-cancel
+Hazard flashers operate properly
+Rear-view interior mirror operates properly
+Exterior mirrors’ operation and condition
+Remote mirror control operates properly
+Glass free of cracks, stars and large chips
+Window tinting clear and conforms to local requirements
+Dome/courtesy lights operate with door cycles
+Windows operate properly
+Window locks operate properly
+Power windows operate from master switch and all door switches
+Audio/CD/Aux system working properly, CD cartridge present (if equipped)
+Audio speakers do not rattle at high volume and function properly
+Antenna is present and functional
+Clock operates properly
+12v ACC power outlet operates properly
+Ashtrays (if equipped) are present and operate properly
+Headliner, sun visors, dash pad, upholstery, console, cup holders, trim panels and carpet are in place, in good condition and operate properly
+Driver floor mat (if equipped) is appropriate OEM floor mat for the vehicle, properly secured and not stacked on top of another floor mat
+Doors open and close properly
+Door locks, including child safety locks, operate properly
+Remote keyless entry system and smart key system operate properly
+2 Master keys are present
+Theft deterrent system operates properly
+Seat adjustments and seat heater(s) operate properly
+Memory seat control operates properly
+Headrests function properly
+Defogger indicator light operates properly
+Rear defogger operates properly
+Luggage compartment light operation and trim appearance
+Luggage compartment is clean, free of debris, no stains
+Hood and luggage compartment latches operate properly
+Interior remote luggage compartment release operates properly
+Emergency trunk release operates properly
+Fuel door release operates properly
+Spare tire’s cover appearance and condition
+Spare tire or inflator kit present
+Spare tire has correct air pressure and a minimum of 5/32" tread remaining
+No signs of damage to spare tire
+Spare tire and storage areas are clean
+Spare tire is securely fastened
+Jack and tools are correct, present and secured
+Acceptable aftermarket items checked
+Removal of unacceptable aftermarket items
+Body surface condition
+Exterior is washed, clean and free of water spots
+Paint is free of swirl marks and has an even, high luster
+Paint is free of removable scratches
+Paint is free of wax residue
+Wheels/wheel covers are clean
+Wheel wells are clean
+Tires are clean and properly dressed
+Engine compartment is clean
+Engine compartment under-hood heat insulator pad is clean
+Engine and compartment are properly dressed
+Interior is free of debris
+Dash and vents are clean and properly dressed
+All crevices are clean
+Ashtrays and lighter are clean (if equipped)
+Door jambs are clean
+Glove box and console compartments are clean
+Cabin air filter condition
+Seats, carpets, floor mats (if equipped) and headliner are free of stains
+Free of odor, including heavy fragrance
+Glass is clean and free of streaks
+Body is free of all dents
+Body is reasonably free of dings
+Paint is reasonably free of scratches and chips
+Vehicle is free of improper paint repairs or mismatched color
+Glass is free of improper repairs
+Bumpers are free of cuts, gouges and mismatched paint
+Interior leather, vinyl, plastic, carpet and fabric surfaces are free of holes, rips, tears, excessive wear or fading
+No evidence of previous improper interior repairs
