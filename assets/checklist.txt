@@ -1,61 +1,62 @@
-Run and print Carfax Vehicle History Report and attach. Run a Techstream Health Check and retain the diagnostic report in dealer file. Check for and perform outstanding Recalls and applicable SSCs
-Cold engine operation performs properly
-Throttle operates properly during cold start
-Vehicle operates properly during warm-up conditions
-Engine performs properly during operating temperature
-Engine reaches normal operating temperature
-Engine fan(s) operate properly
-Brake pedal free play and travel within specifications
-No abnormal vibrations and noises during brake applications
-ABS operates properly (via Techstream Health Check)
-Parking brake operates properly and within specification
-Seat belt material condition
-Seat belts operate properly with full extension and smooth operation
-Transmission/clutch operates smoothly
-Automatic transmission operates properly during cold temperature
-Automatic transmission operates properly during operating temperature
-Steering has normal feel in lock-to-lock turning
-Steering wheel centered in straight-line driving
-Vehicle tracks and drives straight on level surface
-Tilt and telescopic steering mechanism operates properly
-Front windshield wiper operates properly in all modes
-Rear windshield wiper operates properly in all modes
-Windshield washer fluid sprays properly
-Replace wiper blade/inserts and ensure clear glass properly
-Wipers return to correct position when off
-Speedometer functions properly
-Odometer application registers mileage in every mode
-Cruise control operates properly
-Heater operates properly
-A/C operates properly
-No abnormal noise or vibration from engine
- No excessive wind or road noise
-No abnormal tire vibration/steering wheel shimmy during road test
-No abnormal squeaks/rattles within the interior of the vehicle
-Frame/Unibody conditio
-Panel alignment and fit
-Lower body and underbody condition
-Suspension-related items for wear/leaks and proper performance
-Inspect struts/shocks for leaks and wear
-Power steering system operates properly with no leaks
-Wheel covers secure and reasonably free of damage
-Tires are inflated to specification and free of defects and damage
-Minimum of 5/32" tread depth remaining across tread width 
-"All four tires must be of same brand, model, size, tread design, 
-speed and load rating per OEM vehicle specifications "
-Brake calipers and lines operate properly with no signs of damage
-"The brake system contains all needed equipment (shim kit, pins, 
-rattle clips, etc.)"
-Brake pad/shoe linings have a minimum thickness of 50% remaining
-"Brake rotors/drums within specifications with no abnormal 
-grooving and discoloration"
-Exhaust system is properly secured with no leaks
-Engine/transmission mounts operate properly with no signs of wear
-Drive/axle shafts operate properly with no damage
-CV joints/boots operate properly with no signs of wear
-Inspect engine for fuel, oil, coolant or other fluid leaks 
-Inspect transmission case and pan for leaks
-Differential fluid level correct with no leaks
+VIN & Dealer Code Check
+1. Run and print Carfax Vehicle History Report and attach. Run a Techstream Health Check and retain the diagnostic report in dealer file. Check for and perform outstanding Recalls and applicable SSCs
+Road Test
+2. Cold engine operation performs properly
+3. Throttle operates properly during cold start
+4. Vehicle operates properly during warm-up conditions
+5. Engine performs properly during operating temperature
+6. Engine reaches normal operating temperature
+7. Engine fan(s) operate properly
+8. Brake pedal free play and travel within specifications
+9. No abnormal vibrations and noises during brake applications
+10. ABS operates properly (via Techstream Health Check)
+11. Parking brake operates properly and within specification
+12. Seat belt material condition
+13. Seat belts operate properly with full extension and smooth operation
+14. Transmission/clutch operates smoothly
+15. Automatic transmission operates properly during cold temperature
+16. Automatic transmission operates properly during operating temperature
+17. Steering has normal feel in lock-to-lock turning
+18. Steering wheel centered in straight-line driving
+19. Vehicle tracks and drives straight on level surface
+20. Tilt and telescopic steering mechanism operates properly
+21. Front windshield wiper operates properly in all modes
+22. Rear windshield wiper operates properly in all modes
+23. Windshield washer fluid sprays properly
+24. Replace wiper blade/inserts and ensure clear glass properly
+25. Wipers return to correct position when off
+26. Speedometer functions properly
+27. Odometer application registers mileage in every mode
+28. Cruise control operates properly
+29. Heater operates properly
+30. A/C operates properly
+31. No abnormal noise or vibration from engine
+32. No excessive wind or road noise
+33. No abnormal tire vibration/steering wheel shimmy during road test
+34. No abnormal squeaks/rattles within the interior of the vehicle
+Frame, Structure & Underbody
+35. Frame/Unibody condition
+36. Panel alignment and fit
+37. Lower body and underbody condition
+38. Suspension-related items for wear/leaks and proper performance
+39. Inspect struts/shocks for leaks and wear
+40. Power steering system operates properly with no leaks
+41. Wheel covers secure and reasonably free of damage
+42. Tires are inflated to specification and free of defects and damage
+43. Minimum of 5/32" tread depth remaining across tread width 
+44. All four tires must be of same brand, model, size, tread design, speed and load rating per OEM vehicle specifications 
+45. Brake calipers and lines operate properly with no signs of damage
+46. The brake system contains all needed equipment (shim kit, pins, rattle clips, etc.)
+47. Brake pad/shoe linings have a minimum thickness of 50% remaining
+48. Brake rotors/drums within specifications with no abnormal grooving and discoloration
+49. Exhaust system is properly secured with no leaks
+50. Engine/transmission mounts operate properly with no signs of wear
+51. Drive/axle shafts operate properly with no damage
+52. CV joints/boots operate properly with no signs of wear
+53. Inspect engine for fuel, oil, coolant or other fluid leaks 
+54. Inspect transmission case and pan for leaks
+55. Differential fluid level correct with no leaks
+Emissions & State Inspection
 Perform emissions test and/or state inspection, if required
 Drive belts and hoses free of cracks and damage
 Confirm under-hood labels and decals
