@@ -2,12 +2,13 @@ package com.cardian;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.control.ScrollPane;
 
@@ -19,15 +20,16 @@ public class CheckboxController {
     @FXML
     public void initialize() {
         List<String> data = loadDataFromFile("assets\\checklist.txt"); // list.txt being the file of every thing of the
-                                                                       // checkbox
-        ScrollPane scrollPane = new ScrollPane(); // create a scrollpane
-        scrollPane.setContent(checkboxContainer); // set content of scrollpane
-        scrollPane.setPrefSize(400, 400); // sizing of the scrollpane
-
+            
         for (String str : data) {
-            CheckBox checkboxx = new CheckBox(str);
-            checkboxx.setSelected(false);
-            checkboxContainer.getChildren().add(checkboxx);
+            HBox hbox = new HBox(5);
+            CheckBox checkboxright = new CheckBox(str);
+            CheckBox checkboxleft = new CheckBox();
+            checkboxleft.setSelected(false);
+            checkboxright.setSelected(false);
+            hbox.getChildren().add(checkboxleft);
+            hbox.getChildren().add(checkboxright);
+            checkboxContainer.getChildren().add(hbox);   
         }
     }
 
