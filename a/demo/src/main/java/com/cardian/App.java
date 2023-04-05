@@ -13,6 +13,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -31,27 +32,21 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("mainmenu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("loginPage.fxml"));
         // scene = new Scene(root, screenWidth, screenHeight); //If we want to set a
         // different window size
+        Image logo = new Image("cardian.png");
+
         scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("Cardian");
+        stage.getIcons().add(logo);
         stage.setResizable(false);
         stage.show();
     }
 
-    static void setRoot(String fxml) throws IOException {
-        scene.setRoot(loadFXML(fxml));
-    }
-
-    private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
-        return fxmlLoader.load();
-    }
-
     public static void main(String[] args) {
-        launch();
+        launch(args);
     }
 
 }
