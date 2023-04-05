@@ -20,8 +20,8 @@
                   <Font name="Arial Rounded MT Bold" size="30.0" />
                </font>
             </Label>
-            <!-- <Button layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#switchToMainMenu" prefHeight="59.0" prefWidth="59.0" text="Home" /> -->
-            <Button layoutX="14.0" layoutY="21.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" text="Home" />
+            <Button layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#switchToMainMenu" prefHeight="59.0" prefWidth="59.0" text="Home" />
+            <!-- <Button layoutX="14.0" layoutY="21.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" text="Home" /> -->
             <MenuButton layoutX="223.0" layoutY="38.0" mnemonicParsing="false" text="Menu">
               <items>
                 <MenuItem mnemonicParsing="false" text="About" />

@@ -2,9 +2,11 @@ package com.cardian;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
 import javafx.scene.layout.BorderPane;
@@ -31,6 +33,11 @@ public class CheckboxController {
             hbox.getChildren().add(checkboxright);
             checkboxContainer.getChildren().add(hbox);   
         }
+    }
+
+    public void switchToMainMenu(ActionEvent event) throws IOException {
+        SceneController sc = new SceneController();
+        sc.switchToMainMenu(event);
     }
 
     private ArrayList<String> loadDataFromFile(String fileName) {
