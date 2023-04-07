@@ -8,22 +8,12 @@ import java.io.FileWriter;
 
 public class LoginIO {
 
-    // private String filename = "credentials.txt";
     private String[][] credentials;
-
-    // public LoginIO(String filename) {
-    // this.filename = filename;
-    // }
-    /* public static void main(String[] args) throws Exception {
-        LoginIO log = new LoginIO();
-        log.addCredential("bagel", "cheese");
-    } */
 
     public boolean isValidLogin(String username, String password) throws Exception {
         boolean found = false;
 
         readCredentialsFile();
-        System.out.println(username + " " + password);
 
         for (int i = 0; i < credentials.length; i++) {
 
@@ -35,7 +25,7 @@ public class LoginIO {
         return found;
     }
 
-    public void addCredential(String username, String password) throws Exception {
+    public boolean addCredential(String username, String password) throws Exception {
 
         if (!isValidLogin(username, password)) {
             File file = new File("src/main/resources/com/cardian/credentials.txt");
@@ -54,9 +44,9 @@ public class LoginIO {
 
             bw.close();
             fw.close();
-            
+            return true;
         } else {
-            System.out.println("Account already in use!");
+            return false;
         }
     }
 
