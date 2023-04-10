@@ -5,6 +5,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
@@ -17,19 +19,12 @@
                   <Font name="Arial Rounded MT Bold" size="30.0" />
                </font>
             </Label>
-<<<<<<< Updated upstream
-<<<<<<<< Updated upstream:a/demo/src/main/resources/com/cardian/buyingguidepage.fxml
-            <Button layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#switchToMainMenu" prefHeight="59.0" prefWidth="59.0" text="Home" />
-========
+            <ImageView fitHeight="60.0" fitWidth="59.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../assets/cardian.png" />
+               </image>
+            </ImageView>
             <Button layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#switchToMainMenu" opacity="0.0" prefHeight="59.0" prefWidth="59.0" text="Home" />
->>>>>>>> Stashed changes:src/main/resources/com/cardian/buyingguidepage.fxml
-=======
-<<<<<<< Updated upstream:a/demo/src/main/resources/com/cardian/buyingguidepage.fxml
-            <Button layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#switchToMainMenu" prefHeight="59.0" prefWidth="59.0" text="Home" />
-=======
-            <Button layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#switchToMainMenu" opacity="0.0" prefHeight="59.0" prefWidth="59.0" text="Home" />
->>>>>>> Stashed changes:src/main/resources/com/cardian/buyingguidepage.fxml
->>>>>>> Stashed changes
             <MenuButton layoutX="223.0" layoutY="38.0" mnemonicParsing="false" text="Menu">
               <items>
                 <MenuItem mnemonicParsing="false" text="About" />
@@ -42,21 +37,10 @@
          </children>
       </Pane>
       <Group />
-      <Label layoutX="52.0" layoutY="100.0" text="Buying Guide" textFill="#2f52e4">
+      <Label layoutX="6.0" layoutY="100.0" text="Vehicle Diagnostics" textFill="#2f52e4">
          <font>
             <Font name="Arial Rounded MT Bold" size="30.0" />
          </font>
       </Label>
-<<<<<<< Updated upstream
-<<<<<<<< Updated upstream:a/demo/src/main/resources/com/cardian/buyingguidepage.fxml
-========
-      <VBox fx:id="checkboxContainer" layoutX="13.0" layoutY="145.0" prefHeight="448.0" prefWidth="274.0" />
->>>>>>>> Stashed changes:src/main/resources/com/cardian/buyingguidepage.fxml
-=======
-<<<<<<< Updated upstream:a/demo/src/main/resources/com/cardian/buyingguidepage.fxml
-=======
-      <VBox fx:id="checkboxContainer" layoutX="13.0" layoutY="145.0" prefHeight="448.0" prefWidth="274.0" />
->>>>>>> Stashed changes:src/main/resources/com/cardian/buyingguidepage.fxml
->>>>>>> Stashed changes
    </children>
 </Pane>

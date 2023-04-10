@@ -1,0 +1,25 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< org.openjfx:cardian >-------------------------
+[INFO] Building cardian 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> javafx:0.0.8:run (default-cli) > process-classes @ cardian >>>
+[INFO] 
+[INFO] --- resources:3.3.0:resources (default-resources) @ cardian ---
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- compiler:3.5.1:compile (default-compile) @ cardian ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< javafx:0.0.8:run (default-cli) < process-classes @ cardian <<<
+[INFO] 
+[INFO] 
+[INFO] --- javafx:0.0.8:run (default-cli) @ cardian ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:54 h
+[INFO] Finished at: 2023-04-05T20:47:17-04:00
+[INFO] ------------------------------------------------------------------------

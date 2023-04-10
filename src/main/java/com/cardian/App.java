@@ -22,9 +22,9 @@ import java.io.IOException;
  */
 public class App extends Application {
 
-    // private FileIO fileIOCivic = new FileIO("", 1, 6, 15);
-    // private FileIO fileIOCamry = new FileIO("", 2, 20, 9);
-    private FileIO fileIOVeloster = new FileIO("assets\\Veloster_Maintenance.txt", 3, 11, 26);
+    // private FileIO fileIOCivic = new FileIO("", 0, 6, 15);
+    // private FileIO fileIOCamry = new FileIO("", 1, 20, 9);
+    private FileIO fileIOVeloster = new FileIO("assets\\Veloster_Maintenance.txt", 2, 11, 26);
     private MaintenancePageController mpc = new MaintenancePageController();
 
     private static Scene scene;
