@@ -20,13 +20,13 @@ public class CheckboxController {
 
     @FXML
     public VBox checkboxContainer;
-    //private int leftCheckboxCount = 0;
+    //private int leftCheckboxCount = 0;  // im still working on it
    // public Text countDisplay;
 
     @FXML
     public void initialize() {
-        List<String> data = loadDataFromFile("assets\\checklist.txt"); // list.txt being the file of every thing of the
-
+        List<String> data = loadDataFromFile("assets\\checklist.txt"); // This sets the txt to the class data
+//This gives checkboxes to each of the lines from the txt file.
         for (String str : data) {
             HBox hbox = new HBox(5);
            // Label labelLeft = new Label("Meets Standard");
@@ -53,7 +53,7 @@ public class CheckboxController {
         SceneController sc = new SceneController();
         sc.switchToMainMenu(event);
     }
-
+//This reads each line from the txt file
     private ArrayList<String> loadDataFromFile(String fileName) {
         ArrayList<String> data = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
