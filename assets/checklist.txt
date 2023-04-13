@@ -1,5 +1,6 @@
 VIN & Dealer Code Check
 1. Run and print Carfax Vehicle History Report and attach. Run a Techstream Health Check and retain the diagnostic report in dealer file. Check for and perform outstanding Recalls and applicable SSCs
+
 Road Test
 2. Cold engine operation performs properly
 3. Throttle operates properly during cold start
@@ -34,6 +35,7 @@ Road Test
 32. No excessive wind or road noise
 33. No abnormal tire vibration/steering wheel shimmy during road test
 34. No abnormal squeaks/rattles within the interior of the vehicle
+
 Frame, Structure & Underbody
 35. Frame/Unibody condition
 36. Panel alignment and fit
@@ -57,58 +59,62 @@ Frame, Structure & Underbody
 54. Inspect transmission case and pan for leaks
 55. Differential fluid level correct with no leaks
 Emissions & State Inspection
-Perform emissions test and/or state inspection, if required
-Drive belts and hoses free of cracks and damage
-Confirm under-hood labels and decals
-Air filter in good condition
-Battery has no visible damage
-Perform battery check with Midtronics GR8
-Battery posts and cables free of corrosion and damage
-Battery properly sized and secure
-Charging system operating properly and within specification
-Engine coolant level within specification
-Coolant specific gravity to -31° Fahrenheit 
-Change engine oil and filter
-Check for evidence of oil gel
-Oil, brake, clutch, transmission, transfer case, power steering and washer fluid at proper levels
-Under-hood fluids clear and uncontaminated
-Owner’s Manual and TCUV Warranty Supplement in dealer’s possession
-Fuel gauge operational
-Battery voltage gauge operational
-Engine temperature gauge operational
-Horn operates properly
-Airbag(s) present with no evidence of deployment
-Headlights are properly aligned
-High and low beams operate properly
-Tail lights operate properly
-Brake lights operate properly
-Side marker lights operate properly
-Backup lights operate properly
-License plate lights operate properly
-No cracked, deeply hazed/yellowed or broken lenses of exterior lights
-Instrument panel/warning lights operate properly
-HVAC panel/lights operate properly
-Instrument panel light dimmer operates properly
-Turn signals operate properly and self-cancel
-Hazard flashers operate properly
-Rear-view interior mirror operates properly
-Exterior mirrors’ operation and condition
-Remote mirror control operates properly
-Glass free of cracks, stars and large chips
-Window tinting clear and conforms to local requirements
-Dome/courtesy lights operate with door cycles
-Windows operate properly
-Window locks operate properly
-Power windows operate from master switch and all door switches
-Audio/CD/Aux system working properly, CD cartridge present (if equipped)
-Audio speakers do not rattle at high volume and function properly
-Antenna is present and functional
-Clock operates properly
-12v ACC power outlet operates properly
-Ashtrays (if equipped) are present and operate properly
-Headliner, sun visors, dash pad, upholstery, console, cup holders, trim panels and carpet are in place, in good condition and operate properly
-Driver floor mat (if equipped) is appropriate OEM floor mat for the vehicle, properly secured and not stacked on top of another floor mat
-Doors open and close properly
+56. Perform emissions test and/or state inspection, if required
+
+Under Hood
+57. Drive belts and hoses free of cracks and damage
+58. Confirm under-hood labels and decals
+59. Air filter in good condition
+60. Battery has no visible damage
+61. Perform battery check with Midtronics GR8
+62. Battery posts and cables free of corrosion and damage
+63. Battery properly sized and secure
+64. Charging system operating properly and within specification
+65. Engine coolant level within specification
+66. Coolant specific gravity to -31° Fahrenheit 
+67. Change engine oil and filter
+68. Check for evidence of oil gel
+69. Oil, brake, clutch, transmission, transfer case, power steering and washer fluid at proper levels
+70. Under-hood fluids clear and uncontaminated
+
+Functional & Walkaround
+71. Owner’s Manual and TCUV Warranty Supplement in dealer’s possession
+72. Fuel gauge operational
+73. Battery voltage gauge operational
+74. Engine temperature gauge operational
+75. Horn operates properly
+76. Airbag(s) present with no evidence of deployment
+77. Headlights are properly aligned
+78. High and low beams operate properly
+79. Tail lights operate properly
+80. Brake lights operate properly
+81. Side marker lights operate properly
+82. Backup lights operate properly
+83. License plate lights operate properly
+84. No cracked, deeply hazed/yellowed or broken lenses of exterior lights
+85. Instrument panel/warning lights operate properly
+86. HVAC panel/lights operate properly
+87. Instrument panel light dimmer operates properly
+88. Turn signals operate properly and self-cancel
+89. Hazard flashers operate properly
+90. Rear-view interior mirror operates properly
+91. Exterior mirrors’ operation and condition
+92. Remote mirror control operates properly
+93. Glass free of cracks, stars and large chips
+94. Window tinting clear and conforms to local requirements
+95. Dome/courtesy lights operate with door cycles
+96. Windows operate properly
+97. Window locks operate properly
+98. Power windows operate from master switch and all door switches
+99. Audio/CD/Aux system working properly, CD cartridge present (if equipped)
+100. Audio speakers do not rattle at high volume and function properly
+101. Antenna is present and functional
+102. Clock operates properly
+103. 12v ACC power outlet operates properly
+104. Ashtrays (if equipped) are present and operate properly
+105. Headliner, sun visors, dash pad, upholstery, console, cup holders, trim panels and carpet are in place, in good condition and operate properly
+106. Driver floor mat (if equipped) is appropriate OEM floor mat for the vehicle, properly secured and not stacked on top of another floor mat
+107. Doors open and close properly
 Door locks, including child safety locks, operate properly
 Remote keyless entry system and smart key system operate properly
 2 Master keys are present

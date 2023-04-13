@@ -10,6 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <Pane prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cardian.CheckboxController">
    <children>
@@ -41,7 +42,10 @@
       </Label>
       <ScrollPane layoutY="138.0" prefHeight="462.0" prefViewportHeight="448.0" prefViewportWidth="290.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
          <content>
-            <VBox fx:id="checkboxContainer" prefHeight="448.0" prefWidth="296.0" style="-fx-background-color: #ffffff;" />
+            <VBox fx:id="checkboxContainer" prefHeight="448.0" prefWidth="296.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Text fx:id="countDisplay" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="294.63671875" />
+               </children></VBox>
          </content>
          <effect>
             <ColorAdjust />

@@ -24,12 +24,12 @@ public class SearchController {
     
     @FXML
     public TextField searchField; // fxid
-    public Text autozonePriceTag;
+    public Text onePriceTag;
     public Text carpartsPriceTag;
 
     @FXML 
     public void initialize() {
-        autozonePriceTag.setText("");
+        onePriceTag.setText("");
         carpartsPriceTag.setText("");
     }
 
@@ -54,16 +54,16 @@ public class SearchController {
     }
 
     public void updatePriceTags(String searchTerm, double prices[]) {
-        String azText = String.format("Autozone's %s is $%.2f", searchTerm, prices[0]);
-        String cText = String.format("Carpart's %s is $%.2f", searchTerm, prices[1]);
+        String azText = String.format("1aauto's first listing of %s is $%.2f", searchTerm, prices[0]);
+        String cText = String.format("1aauto's second listing of %s is $%.2f", searchTerm, prices[1]);
 
-        autozonePriceTag.setText(azText);
+        onePriceTag.setText(azText);
         carpartsPriceTag.setText(cText);
     }
 
     /* This method only runs whenever there is an error scraping data */
     public void updatePriceTags(String searchTerm) {
-        autozonePriceTag.setText("internal error");
+        onePriceTag.setText("internal error");
         carpartsPriceTag.setText("internal error");
     }
 

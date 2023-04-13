@@ -12,25 +12,39 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.control.Label;
 
 public class CheckboxController {
 
     @FXML
     public VBox checkboxContainer;
+    private int leftCheckboxCount = 0;
+    public Text countDisplay;
 
     @FXML
     public void initialize() {
         List<String> data = loadDataFromFile("assets\\checklist.txt"); // list.txt being the file of every thing of the
-            
+
         for (String str : data) {
             HBox hbox = new HBox(5);
+            Label labelLeft = new Label("Meets Standard");
+            Label labelRight = new Label("Needs Repair");
             CheckBox checkboxright = new CheckBox(str);
             CheckBox checkboxleft = new CheckBox();
             checkboxleft.setSelected(false);
             checkboxright.setSelected(false);
+            if (checkboxleft.isSelected()){
+                leftCheckboxCount++;
+            }else {
+                leftCheckboxCount--;
+            }
+        countDisplay.setText(leftCheckboxCount + "out of 160 meet the standard.");
             hbox.getChildren().add(checkboxleft);
             hbox.getChildren().add(checkboxright);
+            hbox.getChildren().add(labelLeft);
+            hbox.getChildren().add(labelRight);
             checkboxContainer.getChildren().add(hbox);   
         }
     }
