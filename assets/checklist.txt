@@ -115,56 +115,64 @@ Functional & Walkaround
 105. Headliner, sun visors, dash pad, upholstery, console, cup holders, trim panels and carpet are in place, in good condition and operate properly
 106. Driver floor mat (if equipped) is appropriate OEM floor mat for the vehicle, properly secured and not stacked on top of another floor mat
 107. Doors open and close properly
-Door locks, including child safety locks, operate properly
-Remote keyless entry system and smart key system operate properly
-2 Master keys are present
-Theft deterrent system operates properly
-Seat adjustments and seat heater(s) operate properly
-Memory seat control operates properly
-Headrests function properly
-Defogger indicator light operates properly
-Rear defogger operates properly
-Luggage compartment light operation and trim appearance
-Luggage compartment is clean, free of debris, no stains
-Hood and luggage compartment latches operate properly
-Interior remote luggage compartment release operates properly
-Emergency trunk release operates properly
-Fuel door release operates properly
-Spare tire’s cover appearance and condition
-Spare tire or inflator kit present
-Spare tire has correct air pressure and a minimum of 5/32" tread remaining
-No signs of damage to spare tire
-Spare tire and storage areas are clean
-Spare tire is securely fastened
-Jack and tools are correct, present and secured
-Acceptable aftermarket items checked
-Removal of unacceptable aftermarket items
-Body surface condition
-Exterior is washed, clean and free of water spots
-Paint is free of swirl marks and has an even, high luster
-Paint is free of removable scratches
-Paint is free of wax residue
-Wheels/wheel covers are clean
-Wheel wells are clean
-Tires are clean and properly dressed
-Engine compartment is clean
-Engine compartment under-hood heat insulator pad is clean
-Engine and compartment are properly dressed
-Interior is free of debris
-Dash and vents are clean and properly dressed
-All crevices are clean
-Ashtrays and lighter are clean (if equipped)
-Door jambs are clean
-Glove box and console compartments are clean
-Cabin air filter condition
-Seats, carpets, floor mats (if equipped) and headliner are free of stains
-Free of odor, including heavy fragrance
-Glass is clean and free of streaks
-Body is free of all dents
-Body is reasonably free of dings
-Paint is reasonably free of scratches and chips
-Vehicle is free of improper paint repairs or mismatched color
-Glass is free of improper repairs
-Bumpers are free of cuts, gouges and mismatched paint
-Interior leather, vinyl, plastic, carpet and fabric surfaces are free of holes, rips, tears, excessive wear or fading
-No evidence of previous improper interior repairs
+108. Door locks, including child safety locks, operate properly
+109. Remote keyless entry system and smart key system operate properly
+110. 2 Master keys are present
+111. Theft deterrent system operates properly
+112. Seat adjustments and seat heater(s) operate properly
+113. Memory seat control operates properly
+114. Headrests function properly
+115. Defogger indicator light operates properly
+116. Rear defogger operates properly
+117. Luggage compartment light operation and trim appearance
+118. Luggage compartment is clean, free of debris, no stains
+119. Hood and luggage compartment latches operate properly
+120. Interior remote luggage compartment release operates properly
+121. Emergency trunk release operates properly
+122. Fuel door release operates properly
+123. Spare tire’s cover appearance and condition
+124. Spare tire or inflator kit present
+125. Spare tire has correct air pressure and a minimum of 5/32" tread remaining
+126. No signs of damage to spare tire
+127. Spare tire and storage areas are clean
+128. Spare tire is securely fastened
+129. Jack and tools are correct, present and secured
+130. Acceptable aftermarket items checked
+131. Removal of unacceptable aftermarket items
+
+Exterior Appearance
+132. Body surface condition
+133. Exterior is washed, clean and free of water spots
+134. Paint is free of swirl marks and has an even, high luster
+135. Paint is free of removable scratches
+136. Paint is free of wax residue
+137. Wheels/wheel covers are clean
+138. Wheel wells are clean
+139. Tires are clean and properly dressed
+
+Engine Compartment
+140. Compartment is clean
+141. Engine compartment under-hood heat insulator pad is clean
+142. Engine and compartment are properly dressed
+
+Interior Appearance
+143. Interior is free of debris
+144. Dash and vents are clean and properly dressed
+145. All crevices are clean
+146. Ashtrays and lighter are clean (if equipped)
+147. Door jambs are clean
+148. Glove box and console compartments are clean
+149. Cabin air filter condition
+150. Seats, carpets, floor mats (if equipped) and headliner are free of stains
+151. Free of odor, including heavy fragrance
+152. Glass is clean and free of streaks
+
+Exterior Repairs
+153. Body is free of all dents
+154. Body is reasonably free of dings
+155. Paint is reasonably free of scratches and chips
+156. Vehicle is free of improper paint repairs or mismatched color
+157. Glass is free of improper repairs
+158. Bumpers are free of cuts, gouges and mismatched paint
+159. Interior leather, vinyl, plastic, carpet and fabric surfaces are free of holes, rips, tears, excessive wear or fading
+160. No evidence of previous improper interior repairs

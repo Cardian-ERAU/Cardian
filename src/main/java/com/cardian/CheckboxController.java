@@ -20,8 +20,8 @@ public class CheckboxController {
 
     @FXML
     public VBox checkboxContainer;
-    private int leftCheckboxCount = 0;
-    public Text countDisplay;
+    //private int leftCheckboxCount = 0;
+   // public Text countDisplay;
 
     @FXML
     public void initialize() {
@@ -29,22 +29,22 @@ public class CheckboxController {
 
         for (String str : data) {
             HBox hbox = new HBox(5);
-            Label labelLeft = new Label("Meets Standard");
-            Label labelRight = new Label("Needs Repair");
+           // Label labelLeft = new Label("Meets Standard");
+            //Label labelRight = new Label("Needs Repair");
             CheckBox checkboxright = new CheckBox(str);
-            CheckBox checkboxleft = new CheckBox();
-            checkboxleft.setSelected(false);
+           // CheckBox checkboxleft = new CheckBox();
+          //  checkboxleft.setSelected(false);
             checkboxright.setSelected(false);
-            if (checkboxleft.isSelected()){
+         /*    if (checkboxleft.isSelected()){
                 leftCheckboxCount++;
             }else {
                 leftCheckboxCount--;
-            }
-        countDisplay.setText(leftCheckboxCount + "out of 160 meet the standard.");
-            hbox.getChildren().add(checkboxleft);
+            }*/
+        //countDisplay.setText(leftCheckboxCount + "out of 160 meet the standard.");
+          //  hbox.getChildren().add(checkboxleft);
             hbox.getChildren().add(checkboxright);
-            hbox.getChildren().add(labelLeft);
-            hbox.getChildren().add(labelRight);
+         //   hbox.getChildren().add(labelLeft);
+         //   hbox.getChildren().add(labelRight);
             checkboxContainer.getChildren().add(hbox);   
         }
     }
