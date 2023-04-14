@@ -41,7 +41,7 @@
       <TextField fx:id="searchField" layoutX="76.0" layoutY="196.0" onKeyTyped="#keyParser" />
       <TextField layoutX="13.0" layoutY="150.0" prefHeight="25.0" prefWidth="284.0" text="Type in the part you want to look up for pricing" />
       <Text fx:id="onePriceTag" layoutX="36.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1aauto's first listing of [part] is [price]" wrappingWidth="227.12890625" />
-      <Text fx:id="carpartsPriceTag" layoutX="36.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1aauto's second listing of [part] is [price]" wrappingWidth="205.95703125" />
+      <Text fx:id="twoPriceTag" layoutX="36.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1aauto's second listing of [part] is [price]" wrappingWidth="205.95703125" />
       <AnchorPane prefHeight="200.0" prefWidth="200.0" />
    </children>
 </Pane>
