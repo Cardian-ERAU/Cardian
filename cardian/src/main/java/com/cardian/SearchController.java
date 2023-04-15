@@ -1,17 +1,9 @@
 package com.cardian;
-import java.io.BufferedReader;
+
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.nio.charset.MalformedInputException;
-import java.util.List;
 
 import org.htmlunit.WebClient;
-import org.htmlunit.html.HtmlDivision;
 import org.htmlunit.html.HtmlPage;
-import org.htmlunit.html.HtmlParagraph;
 import org.htmlunit.html.HtmlSpan;
 
 import javafx.event.ActionEvent;
@@ -106,8 +98,7 @@ public class SearchController {
         return prices;
     }
 
-    public void switchToMainMenu(ActionEvent event) throws IOException {
-        SceneController sc = new SceneController();
-        sc.switchToMainMenu(event);
+    public void switchToMainMenu() throws IOException {
+        App.setRoot("mainMenu");
     }
 }
