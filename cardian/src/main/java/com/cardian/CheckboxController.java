@@ -9,12 +9,8 @@ import java.util.List;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.scene.text.Text;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.control.Label;
 
 public class CheckboxController {
 
@@ -50,8 +46,7 @@ public class CheckboxController {
     }
 
     public void switchToMainMenu(ActionEvent event) throws IOException {
-        SceneController sc = new SceneController();
-        sc.switchToMainMenu(event);
+        App.setRoot("mainMenu");
     }
 //This reads each line from the txt file
     private ArrayList<String> loadDataFromFile(String fileName) {
