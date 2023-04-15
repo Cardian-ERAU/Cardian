@@ -1,4 +1,5 @@
 com\cardian\LoginIO.class
-com\cardian\LoginPage.class
-module-info.class
+com\cardian\DiagnosticIO.class
+com\cardian\App.class
 com\cardian\Controller.class
+module-info.class
