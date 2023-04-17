@@ -6,27 +6,49 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
 public class CheckboxController {
-    
-    @FXML 
+
+    @FXML
     public VBox checkboxContainer;
+    //private int leftCheckboxCount = 0;  // im still working on it
+   // public Text countDisplay;
 
-    @FXML 
+    @FXML
     public void initialize() {
-        List<String> data = loadDataFromFile("assets\\checklist.txt"); // list.txt being the file of every thing of the checkbox
-
-        // this is a comment to show how to commit
+        List<String> data = loadDataFromFile("assets\\checklist.txt"); // This sets the txt to the class data
+//This gives checkboxes to each of the lines from the txt file.
         for (String str : data) {
-            CheckBox checkboxx = new CheckBox(str);
-            checkboxx.setSelected(false);
-            checkboxContainer.getChildren().add(checkboxx);
+            HBox hbox = new HBox(5);
+           // Label labelLeft = new Label("Meets Standard");
+            //Label labelRight = new Label("Needs Repair");
+            CheckBox checkboxright = new CheckBox(str);
+           // CheckBox checkboxleft = new CheckBox();
+          //  checkboxleft.setSelected(false);
+            checkboxright.setSelected(false);
+         /*    if (checkboxleft.isSelected()){
+                leftCheckboxCount++;
+            }else {
+                leftCheckboxCount--;
+            }*/
+        //countDisplay.setText(leftCheckboxCount + "out of 160 meet the standard.");
+          //  hbox.getChildren().add(checkboxleft);
+            hbox.getChildren().add(checkboxright);
+         //   hbox.getChildren().add(labelLeft);
+         //   hbox.getChildren().add(labelRight);
+            checkboxContainer.getChildren().add(hbox);   
         }
     }
 
+    public void switchToMainMenu(ActionEvent event) throws IOException {
+        App.setRoot("mainMenu");
+    }
+//This reads each line from the txt file
     private ArrayList<String> loadDataFromFile(String fileName) {
         ArrayList<String> data = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
@@ -35,8 +57,7 @@ public class CheckboxController {
                 data.add(line);
                 line = br.readLine();
             }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return data;
