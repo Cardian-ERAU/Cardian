@@ -22,7 +22,7 @@ public class CheckboxController {
     @FXML
     public void initialize() {
         List<String> data = loadDataFromFile("assets\\checklist.txt"); // This sets the txt to the class data
-//This gives checkboxes to each of the lines from the txt file.
+
         for (String str : data) {
             HBox hbox = new HBox(5);
            // Label labelLeft = new Label("Meets Standard");
