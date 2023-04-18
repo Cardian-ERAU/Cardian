@@ -212,6 +212,10 @@ public class Controller {
         App.setRoot("diagnosticPage");
     }
 
+    public void switchToAddVehicle() throws IOException {
+        App.setRoot("addVehiclePage");
+    }
+
     public void initializeChoiceBoxes() {
         if (doInitializeDiagnosticPage) {
         choiceBox.getItems().addAll("1: Warning Light", "2: Symptom");
