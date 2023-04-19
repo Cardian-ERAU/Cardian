@@ -1,12 +1,14 @@
 package com.cardian;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Stack;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
@@ -14,7 +16,7 @@ import javafx.scene.text.Text;
 public class Controller {
 
     @FXML
-    private TextField userBox;
+    private TextField userBox, textMile, textMake, textModel;
     @FXML
     private PasswordField passBox, confirmPassBox;
     @FXML
@@ -22,12 +24,15 @@ public class Controller {
     @FXML
     private Text errorText, errorTextTwo, problemText, hiddenText;
     @FXML
-    private Button nextButton, prevButton;
+    private Button nextButton, prevButton, buttonAdd;
+    @FXML
+    private Label labelError;
 
     private LoginIO log = new LoginIO();
     private DiagnosticIO dia = new DiagnosticIO();
-    private String problemChoice;
+    private String problemChoice, make, model;
     private boolean doInitializeDiagnosticPage = true;
+    private int mileage;
 
     public void verifyLogin() {
         try {
@@ -139,6 +144,36 @@ public class Controller {
         }
     }
 
+    public void addVehicle(ActionEvent event) {
+
+        try {
+            mileage = Integer.parseInt(textMile.getText());
+            make = textMake.getText();
+            model = textModel.getText();
+
+            String[] car = { make, model };
+            String[] carHC = { "Honda", "Civic" };
+            String[] carTC = { "Toyota", "Camry" };
+            String[] carHVT = { "Hyundai", "Veloster Turbo" };
+            while (!Arrays.equals(car, carHC) && !Arrays.equals(car, carTC) && !Arrays.equals(car, carHVT)) {
+                labelError.setOpacity(1);
+                labelError.setText(
+                        "Error: Car not supported. Please\ntry inputting 'Honda Civic',\n'Toyota Camry', or 'Hyundai\nVeloster Turbo.'");
+            }
+
+            if (Arrays.equals(car, carHC) || Arrays.equals(car, carTC) || Arrays.equals(car, carHVT)) {
+                labelError.setOpacity(1);
+                labelError.setText("Car accepted!");
+            }
+        } catch (NumberFormatException e) {
+            labelError.setOpacity(1);
+            labelError.setText("Error: Mileage must be an integer.");
+        } catch (Exception e) {
+            labelError.setOpacity(1);
+            labelError.setText("Error: Please try again.");
+        }
+    }
+
     public void switchToLogin() throws IOException {
         App.setRoot("loginPage");
     }
@@ -161,10 +196,10 @@ public class Controller {
 
     public void initializeChoiceBoxes() {
         if (doInitializeDiagnosticPage) {
-        choiceBox.getItems().addAll("1: Warning Light", "2: Symptom");
-        choiceBox.setOnAction(this::choseType);
-        problemBox.setOnAction(this::choseProblem);
-        doInitializeDiagnosticPage = false;
+            choiceBox.getItems().addAll("1: Warning Light", "2: Symptom");
+            choiceBox.setOnAction(this::choseType);
+            problemBox.setOnAction(this::choseProblem);
+            doInitializeDiagnosticPage = false;
         }
     }
 
@@ -174,5 +209,9 @@ public class Controller {
 
     public void switchToPartsLookup() throws IOException {
         App.setRoot("partsLookupPage");
+    }
+
+    public void switchToAddVehicle() throws IOException {
+        App.setRoot("addVehiclePage");
     }
 }

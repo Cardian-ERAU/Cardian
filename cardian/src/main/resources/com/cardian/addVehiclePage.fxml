@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cardian.Controller">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #2F52E4;">
+         <children>
+            <VBox layoutX="75.0" layoutY="200.0" prefHeight="200.0" prefWidth="150.0">
+               <children>
+                  <Label text="Mileage">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textMile" scaleY="1.1">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Make">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textMake" scaleY="1.1">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Model">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textModel" scaleY="1.1">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button fx:id="buttonAdd" mnemonicParsing="false" onAction="#addVehicle" text="Add">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Label layoutX="92.0" layoutY="32.0" text="Cardian" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="59.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cardian.png" />
+               </image>
+            </ImageView>
+            <MenuButton layoutX="223.0" layoutY="38.0" mnemonicParsing="false" text="Menu">
+              <items>
+                <MenuItem mnemonicParsing="false" text="About" />
+                <MenuItem mnemonicParsing="false" text="Account" />
+                  <MenuItem mnemonicParsing="false" text="Help" />
+                  <MenuItem mnemonicParsing="false" text="Settings" />
+                  <MenuItem mnemonicParsing="false" text="Exit" />
+              </items>
+            </MenuButton>
+         </children>
+      </Pane>
+      <Group />
+      <Label layoutX="62.0" layoutY="100.0" text="Add Vehicle" textFill="#2f52e4">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#switchToMainMenu" prefHeight="59.0" prefWidth="59.0" text="Home" />
+      <Label fx:id="labelError" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="462.0" opacity="0.0" prefHeight="122.0" prefWidth="256.0" text="Error: " textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
