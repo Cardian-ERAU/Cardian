@@ -45,7 +45,7 @@ public class CheckboxController {
         }
     }
 
-    public void switchToMainMenu(ActionEvent event) throws IOException {
+    public void switchToMainMenu() throws IOException {
         App.setRoot("mainMenu");
     }
 //This reads each line from the txt file

@@ -4,12 +4,16 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<Pane prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cardian.Controller">
+<Pane prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cardian.CheckboxController">
    <children>
       <Pane prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #2F52E4;">
          <children>
@@ -18,6 +22,7 @@
                   <Font name="Arial Rounded MT Bold" size="30.0" />
                </font>
             </Label>
+            <!-- <Button layoutX="14.0" layoutY="21.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" text="Home" /> -->
             <MenuButton layoutX="223.0" layoutY="38.0" mnemonicParsing="false" text="Menu">
               <items>
                 <MenuItem mnemonicParsing="false" text="About" />
@@ -27,7 +32,7 @@
                   <MenuItem mnemonicParsing="false" text="Exit" />
               </items>
             </MenuButton>
-            <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="14.0" layoutY="21.0" onMouseClicked="#switchToMainMenu" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="20.0" layoutY="21.0" onMouseClicked="#switchToMainMenu" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@cardian.png" />
                </image>
@@ -40,5 +45,16 @@
             <Font name="Arial Rounded MT Bold" size="30.0" />
          </font>
       </Label>
+      <ScrollPane layoutY="138.0" prefHeight="462.0" prefViewportHeight="448.0" prefViewportWidth="290.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+         <content>
+            <VBox fx:id="checkboxContainer" prefHeight="448.0" prefWidth="296.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Text fx:id="countDisplay" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="294.63671875" />
+               </children></VBox>
+         </content>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </ScrollPane> 
    </children>
 </Pane>
