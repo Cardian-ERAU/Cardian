@@ -161,10 +161,10 @@ public class Controller {
 
     public void initializeChoiceBoxes() {
         if (doInitializeDiagnosticPage) {
-        choiceBox.getItems().addAll("1: Warning Light", "2: Symptom");
-        choiceBox.setOnAction(this::choseType);
-        problemBox.setOnAction(this::choseProblem);
-        doInitializeDiagnosticPage = false;
+            choiceBox.getItems().addAll("1: Warning Light", "2: Symptom");
+            choiceBox.setOnAction(this::choseType);
+            problemBox.setOnAction(this::choseProblem);
+            doInitializeDiagnosticPage = false;
         }
     }
 
@@ -174,5 +174,6 @@ public class Controller {
 
     public void switchToPartsLookup() throws IOException {
         App.setRoot("partsLookupPage");
+
     }
 }
