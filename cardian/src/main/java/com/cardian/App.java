@@ -9,15 +9,21 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class App extends Application {
-    
+
+    private MaintenancePageController mpc = new MaintenancePageController();
+
     private static Scene scene;
 
     @Override
     public void start(Stage stage) throws IOException {
+        // fileIOCivic.loadData(mpc);
+        // fileIOCamry.loadData(mpc);
+        // fileIOVeloster.loadData(mpc);
+
         scene = new Scene(loadFXML("loginPage"));
 
         Image logo = new Image(getClass().getResourceAsStream("cardian.png"));
-        
+
         stage.setScene(scene);
         stage.setResizable(false);
         stage.setTitle("Cardian");

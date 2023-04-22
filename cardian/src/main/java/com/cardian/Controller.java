@@ -209,6 +209,7 @@ public class Controller {
 
     public void switchToPartsLookup() throws IOException {
         App.setRoot("partsLookupPage");
+
     }
 
     public void switchToAddVehicle() throws IOException {
