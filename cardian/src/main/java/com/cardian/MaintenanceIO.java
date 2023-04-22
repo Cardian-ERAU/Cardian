@@ -1,7 +1,6 @@
 package com.cardian;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -17,6 +16,7 @@ public class MaintenanceIO {
     private String[] taskName;
     private int[][] doTask;
 
+    // Constructor
     public MaintenanceIO(String inputFile, int car, int mileageColumns, int taskRows) {
         fileName = inputFile;
         carNumber = car;
@@ -29,15 +29,9 @@ public class MaintenanceIO {
 
     }
 
-    // private File carFile = new File(fileName);
-
-    // public void loadData(MaintenancePageController mpc) {
+    // Read car data from file and save to array
     public void loadData() {
-
         try {
-
-            System.out.printf("\nTEST\n");
-
             FileReader carReader = new FileReader(fileName);
             BufferedReader carBufferedReader = new BufferedReader(carReader);
 
@@ -51,9 +45,7 @@ public class MaintenanceIO {
             while (mileageNumber < mileageNumberMax) {
 
                 line = carBufferedReader.readLine();
-                // System.out.println(line);
                 mileage[mileageNumber] = line;
-                // mpc.setMileage(carNumber, mileageNumber, mileage[mileageNumber]);
 
                 mileageNumber++;
             }
@@ -66,14 +58,11 @@ public class MaintenanceIO {
                 // Read task names
                 line = carBufferedReader.readLine();
                 taskName[taskNumber] = line;
-                // mpc.setTaskName(carNumber, taskNumber, taskName[taskNumber]);
 
                 while (mileageNumber < mileageNumberMax) {
                     // Determine if tasks should be done at specific mileage
                     line = carBufferedReader.readLine();
                     doTask[mileageNumber][taskNumber] = Integer.parseInt(line);
-                    // mpc.setDoTask(carNumber, mileageNumber, taskNumber,
-                    // doTask[mileageNumber][taskNumber]);
 
                     mileageNumber++;
                 }
@@ -86,6 +75,7 @@ public class MaintenanceIO {
         }
     }
 
+    // Getters
     public int getMileage(int mileageNum) {
         if (mileage[mileageNum] != null) {
             String mileageString = mileage[mileageNum];

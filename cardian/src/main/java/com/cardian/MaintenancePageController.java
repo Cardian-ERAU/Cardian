@@ -4,8 +4,6 @@ import java.io.IOException;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -29,13 +27,9 @@ public class MaintenancePageController {
             mileageNumberMax2,
             9);
 
-    public int[][] mileage = new int[3][30]; // mileage at which maintenance tasks should be performed
-    public String[][] taskName = new String[3][30]; // name of maintenance task to be performed
-    public int[][][] doTask = new int[3][30][30]; // if 1, task should be performed at specified mileage
-
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
+    public int[][] mileage = new int[3][30]; // Mileage at which maintenance tasks should be performed
+    public String[][] taskName = new String[3][30]; // Name of maintenance task to be performed
+    public int[][][] doTask = new int[3][30][30]; // If 1, task should be performed at specified mileage
 
     private boolean doInitializeMaintenancePage = true;
 
@@ -53,18 +47,21 @@ public class MaintenancePageController {
     private Text taskText1, taskText2, taskText3, taskText4, taskText5, taskText6, taskText7, taskText8, taskText9,
             taskText10, taskText11, taskText12;
 
+    // Constructor
     public MaintenancePageController() {
     }
 
+    // Initialize the maintenance page when mouse hovers over window
     public void initializeMPC() {
         if (doInitializeMaintenancePage) {
+            // Read data from the three car files
             fileIOCivic.loadData();
             fileIOCamry.loadData();
             fileIOVeloster.loadData();
 
+            // Add cars to car choice box
             carBox.getItems().addAll("1: 2003 Honda Civic", "2: 2016 Hyundai Veloster Turbo", "3: 2017 Toyota Camry");
             carBox.setOnAction(this::choseCar);
-            doInitializeMaintenancePage = false;
 
             int car = 0;
             int mileageNumber = 0;
@@ -74,7 +71,7 @@ public class MaintenancePageController {
             mileageNumberMax[1] = mileageNumberMax1;
             mileageNumberMax[2] = mileageNumberMax2;
 
-            // initialize mileage, task name, and do task
+            // Save car data from files to local arrays
             while (car < 3) {
                 while (mileageNumber < 30) {
                     while (taskNumber < 30) {
@@ -106,14 +103,15 @@ public class MaintenancePageController {
                 car++;
             }
         }
+
+        // Stop initializing once initial initialization is complete (try saying that
+        // ten times fast)
+        doInitializeMaintenancePage = false;
     }
 
-    public void switchToMainMenu(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("mainmenu.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+    // Go back to main menu if logo is pressed
+    public void switchToMainMenu() throws IOException {
+        App.setRoot("mainMenu");
     }
 
     // Getters and setters
@@ -123,10 +121,6 @@ public class MaintenancePageController {
 
     public void setMileage(int car, int i, int miles) {
         mileage[car][i] = miles;
-
-        System.out.printf("Mileage is ");
-        System.out.printf("%d", mileage[car][i]);
-        System.out.printf("\n");
     }
 
     public String getTaskName(int car, int i) {
@@ -135,10 +129,6 @@ public class MaintenancePageController {
 
     public void setTaskName(int car, int i, String task) {
         taskName[car][i] = task;
-
-        System.out.printf("Task is ");
-        System.out.printf(taskName[car][i]);
-        System.out.printf(", %d, %d\n", car, i);
     }
 
     public int getDoTask(int car, int i, int j) {
@@ -149,21 +139,19 @@ public class MaintenancePageController {
         doTask[car][i][j] = trueFalse;
     }
 
+    // Choose car from choice box
     public void choseCar(ActionEvent event) {
         String value = carBox.getValue();
         try {
-            setCar(value);
+            int fileNum = evaluatePosition(value);
+
+            displayCar = fileNum - 1;
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    public void setCar(String value) throws Exception {
-        int fileNum = evaluatePosition(value);
-
-        displayCar = fileNum - 1;
-    }
-
+    // Determine which car was chosen from choice box
     private int evaluatePosition(String string) {
 
         String[] first = string.split(":");
@@ -176,12 +164,17 @@ public class MaintenancePageController {
 
     }
 
+    // Update the list of upcoming tasks when the enter button is pressed
     public void updateList() {
         try {
+            // Get mileage value entered into text field
             userMileage = Integer.parseInt(mileageBox.getText());
 
             displayMileage = 0;
 
+            // Compare mileage from text field with mileage increments from file
+            // If mileage is between the first and final increments, update the list
+            // accordingly
             if (userMileage >= mileage[displayCar][0]
                     && userMileage < mileage[displayCar][mileageNumberMax[displayCar] - 1]) {
                 while (userMileage >= mileage[displayCar][displayMileage] && mileage[displayCar][displayMileage] != 0) {
@@ -189,24 +182,18 @@ public class MaintenancePageController {
                     int tryTaskMin = 0;
                     displayTask = 0;
 
-                    System.out.printf("displayMileage %d\n", displayMileage);
-
                     while (displayTask < 12) {
-                        System.out.printf("displayTask %d\n", displayTask);
 
                         while (tryTask < 30) {
 
                             if (tryTask >= tryTaskMin) {
-                                System.out.printf("tryTask %d (%d)", tryTask, tryTaskMin);
 
                                 if (doTask[displayCar][displayMileage][tryTask] == 1) {
-                                    System.out.printf(", YES\n");
                                     updateListItem(displayTask, taskName[displayCar][tryTask]);
 
                                     tryTaskMin = tryTask + 1;
                                     tryTask = 30;
                                 } else {
-                                    System.out.printf("\n");
                                     updateListItem(displayTask, "");
                                 }
                             }
@@ -223,27 +210,23 @@ public class MaintenancePageController {
                 }
 
                 displayMileage = 0;
-            } else if (userMileage < mileage[displayCar][0] && userMileage >= 0) {
+            }
+            // If mileage is above or equal to zero and below the first increment, update
+            // the list accordingly
+            else if (userMileage < mileage[displayCar][0] && userMileage >= 0) {
                 int tryTask = 0;
                 int tryTaskMin = 0;
                 displayTask = 0;
 
                 while (displayTask < 12) {
-                    System.out.printf("displayTask %d\n", displayTask);
-
                     while (tryTask < 30) {
-
                         if (tryTask >= tryTaskMin) {
-                            System.out.printf("tryTask %d (%d)", tryTask, tryTaskMin);
-
                             if (doTask[displayCar][0][tryTask] == 1) {
-                                System.out.printf(", YES\n");
                                 updateListItem(displayTask, taskName[displayCar][tryTask]);
 
                                 tryTaskMin = tryTask + 1;
                                 tryTask = 30;
                             } else {
-                                System.out.printf("\n");
                                 updateListItem(displayTask, "");
                             }
                         }
@@ -256,7 +239,9 @@ public class MaintenancePageController {
                 }
 
                 tryTaskMin = 0;
-            } else if (userMileage >= mileage[displayCar][mileageNumberMax[displayCar] - 1]) {
+            }
+            // If mileage is above the final increment, tell user their car is old
+            else if (userMileage >= mileage[displayCar][mileageNumberMax[displayCar] - 1]) {
                 taskText1.setText("You have no upcoming");
                 taskText2.setText("maintenance tasks.");
                 taskText3.setText("");
@@ -269,14 +254,19 @@ public class MaintenancePageController {
                 taskText10.setText("");
                 taskText11.setText("");
                 taskText12.setText("");
-            } else {
+            }
+            // If mileage is negative, prompt user to try again
+            else {
                 invalidMileage();
             }
-        } catch (NumberFormatException nfe) {
+        }
+        // If mileage is not an integer, prompt user to try again
+        catch (NumberFormatException nfe) {
             invalidMileage();
         }
     }
 
+    // Update each list item with text
     public void updateListItem(int task, String listText) {
         if (task == 0) {
             taskText1.setText(listText);
@@ -316,6 +306,7 @@ public class MaintenancePageController {
         }
     }
 
+    // Error message for invalid mileage prompting user to try again
     public void invalidMileage() {
         taskText1.setText("Please input a valid mileage.");
         taskText2.setText("");

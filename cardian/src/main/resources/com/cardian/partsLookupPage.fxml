@@ -29,7 +29,7 @@
                   <MenuItem mnemonicParsing="false" text="Exit" />
               </items>
             </MenuButton>
-            <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#switchToMainMenu" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="14.0" layoutY="21.0" onMouseClicked="#switchToMainMenu" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@cardian.png" />
                </image>
