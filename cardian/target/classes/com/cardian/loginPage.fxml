@@ -11,8 +11,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cardian.Controller">
    <children>
-      <PasswordField fx:id="passBox" layoutX="75.0" layoutY="345.0" promptText="Password" />
       <TextField fx:id="userBox" layoutX="76.0" layoutY="288.0" promptText="Username" />
+      <PasswordField fx:id="passBox" layoutX="75.0" layoutY="345.0" promptText="Password" />
       <Button defaultButton="true" layoutX="111.0" layoutY="402.0" mnemonicParsing="false" onAction="#verifyLogin" prefHeight="36.0" prefWidth="78.0" style="-fx-background-color: #2F52E4;" text="Log In" textFill="WHITE" />
       <Text layoutX="35.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cardian" textAlignment="CENTER">
          <font>
