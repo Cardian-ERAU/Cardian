@@ -17,8 +17,6 @@ public class CheckboxController {
 
     @FXML
     public VBox checkboxContainer;
-    //private int leftCheckboxCount = 0;  // im still working on it
-   // public Text countDisplay;
 
     @FXML
     public void initialize() {
@@ -27,25 +25,13 @@ public class CheckboxController {
         for (String str : data) {
             HBox hbox = new HBox(5);
             if (str.matches("^\\d.*")) {
-           // Label labelLeft = new Label("Meets Standard");
-            //Label labelRight = new Label("Needs Repair");
             CheckBox checkboxright = new CheckBox(str);
-           // CheckBox checkboxleft = new CheckBox();
-          //  checkboxleft.setSelected(false);
             checkboxright.setSelected(false);
-         /*    if (checkboxleft.isSelected()){
-                leftCheckboxCount++;
-            }else {
-                leftCheckboxCount--;
-            }*/
-        //countDisplay.setText(leftCheckboxCount + "out of 160 meet the standard.");
-          //  hbox.getChildren().add(checkboxleft);
             hbox.getChildren().add(checkboxright);
         } else {
             hbox.getChildren().add(new Label(str));
         }
-         //   hbox.getChildren().add(labelLeft);
-         //   hbox.getChildren().add(labelRight);
+
             checkboxContainer.getChildren().add(hbox);   
         }
     }
