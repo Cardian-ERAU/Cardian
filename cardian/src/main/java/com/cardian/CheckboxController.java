@@ -11,6 +11,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.control.Label;
 
 public class CheckboxController {
 
@@ -25,6 +26,7 @@ public class CheckboxController {
 
         for (String str : data) {
             HBox hbox = new HBox(5);
+            if (str.matches("^\\d.*")) {
            // Label labelLeft = new Label("Meets Standard");
             //Label labelRight = new Label("Needs Repair");
             CheckBox checkboxright = new CheckBox(str);
@@ -39,6 +41,9 @@ public class CheckboxController {
         //countDisplay.setText(leftCheckboxCount + "out of 160 meet the standard.");
           //  hbox.getChildren().add(checkboxleft);
             hbox.getChildren().add(checkboxright);
+        } else {
+            hbox.getChildren().add(new Label(str));
+        }
          //   hbox.getChildren().add(labelLeft);
          //   hbox.getChildren().add(labelRight);
             checkboxContainer.getChildren().add(hbox);   
