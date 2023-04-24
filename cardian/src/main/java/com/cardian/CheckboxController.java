@@ -11,36 +11,27 @@ import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.control.Label;
 
 public class CheckboxController {
 
     @FXML
     public VBox checkboxContainer;
-    //private int leftCheckboxCount = 0;  // im still working on it
-   // public Text countDisplay;
 
     @FXML
     public void initialize() {
         List<String> data = loadDataFromFile("assets\\checklist.txt"); // This sets the txt to the class data
-//This gives checkboxes to each of the lines from the txt file.
+
         for (String str : data) {
             HBox hbox = new HBox(5);
-           // Label labelLeft = new Label("Meets Standard");
-            //Label labelRight = new Label("Needs Repair");
+            if (str.matches("^\\d.*")) {
             CheckBox checkboxright = new CheckBox(str);
-           // CheckBox checkboxleft = new CheckBox();
-          //  checkboxleft.setSelected(false);
             checkboxright.setSelected(false);
-         /*    if (checkboxleft.isSelected()){
-                leftCheckboxCount++;
-            }else {
-                leftCheckboxCount--;
-            }*/
-        //countDisplay.setText(leftCheckboxCount + "out of 160 meet the standard.");
-          //  hbox.getChildren().add(checkboxleft);
             hbox.getChildren().add(checkboxright);
-         //   hbox.getChildren().add(labelLeft);
-         //   hbox.getChildren().add(labelRight);
+        } else {
+            hbox.getChildren().add(new Label(str));
+        }
+
             checkboxContainer.getChildren().add(hbox);   
         }
     }

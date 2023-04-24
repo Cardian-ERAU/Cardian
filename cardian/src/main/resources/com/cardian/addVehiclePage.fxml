@@ -64,7 +64,7 @@
                   <Font name="Arial Rounded MT Bold" size="30.0" />
                </font>
             </Label>
-            <ImageView fitHeight="60.0" fitWidth="59.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="14.0" layoutY="21.0" onMouseClicked="#switchToMainMenu" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@cardian.png" />
                </image>
@@ -86,7 +86,6 @@
             <Font name="Arial Rounded MT Bold" size="30.0" />
          </font>
       </Label>
-      <Button layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#switchToMainMenu" prefHeight="59.0" prefWidth="59.0" text="Home" />
       <Label fx:id="labelError" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="462.0" opacity="0.0" prefHeight="122.0" prefWidth="256.0" text="Error: " textAlignment="CENTER" textOverrun="CLIP">
          <font>
             <Font size="18.0" />

@@ -1,0 +1,112 @@
+0
+20000
+30000
+40000
+50000
+60000
+70000
+Replace engine oil
+1
+1
+1
+1
+1
+1
+Rotate Tires
+1
+1
+1
+1
+1
+1
+Replace engine oil filter
+1
+0
+1
+0
+1
+0
+Inspect brakes
+1
+0
+1
+0
+1
+0
+Check parking brake adjustment
+1
+0
+1
+0
+1
+0
+Inspect tie rod ends, steering gear box and boots
+1
+0
+1
+0
+1
+0
+Inspect suspension
+1
+0
+1
+0
+1
+0
+Inspect driveshaft boots
+1
+0
+1
+0
+1
+0
+Inspect brake hoses and lines
+1
+0
+1
+0
+1
+0
+Inspect all fluid levels and their conditions
+1
+0
+1
+0
+1
+0
+Inspect exhaust system
+1
+0
+1
+0
+1
+0
+Inspect fuel lines and connections
+1
+0
+1
+0
+1
+0
+Inspect and adjust drive belts
+0
+1
+0
+0
+1
+0
+Replace dust and pollen filter
+0
+1
+0
+0
+1
+0
+Replace air cleaner element
+0
+1
+0
+0
+1
+0

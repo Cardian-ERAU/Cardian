@@ -29,7 +29,7 @@
                   <MenuItem mnemonicParsing="false" text="Exit" />
               </items>
             </MenuButton>
-            <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#switchToMainMenu" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="14.0" layoutY="21.0" onMouseClicked="#switchToMainMenu" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@cardian.png" />
                </image>
@@ -43,8 +43,11 @@
          </font>
       </Label>
       <TextField fx:id="searchField" layoutX="76.0" layoutY="196.0" onKeyTyped="#keyParser" />
-      <TextField layoutX="13.0" layoutY="150.0" prefHeight="25.0" prefWidth="284.0" text="Type in the part you want to look up for pricing" />
-      <Text fx:id="onePriceTag" layoutX="36.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1aauto's first listing of [part] is [price]" wrappingWidth="227.12890625" />
-      <Text fx:id="twoPriceTag" layoutX="36.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1aauto's second listing of [part] is [price]" wrappingWidth="205.95703125" />
+      <TextField layoutX="13.0" layoutY="150.0" prefHeight="25.0" prefWidth="284.0" text="Type in the part you want to look up for pricing">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></TextField>
+      <Text fx:id="onePriceTag" layoutX="32.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1aauto's first listing of [part] is [price]" wrappingWidth="235.62890625" />
+      <Text fx:id="twoPriceTag" layoutX="32.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1aauto's second listing of [part] is [price]" wrappingWidth="224.95703125" />
    </children>
 </Pane>

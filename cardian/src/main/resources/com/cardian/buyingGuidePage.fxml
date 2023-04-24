@@ -32,7 +32,7 @@
                   <MenuItem mnemonicParsing="false" text="Exit" />
               </items>
             </MenuButton>
-            <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="20.0" layoutY="21.0" onMouseClicked="#switchToMainMenu" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="14.0" layoutY="21.0" onMouseClicked="#switchToMainMenu" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@cardian.png" />
                </image>
@@ -49,7 +49,10 @@
          <content>
             <VBox fx:id="checkboxContainer" prefHeight="448.0" prefWidth="296.0" style="-fx-background-color: #ffffff;">
                <children>
-                  <Text fx:id="countDisplay" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="294.63671875" />
+                  <Text fx:id="countDisplay" strokeType="OUTSIDE" strokeWidth="0.0" text="Use this checklist to do before buying a used vehicle." wrappingWidth="309.63671875">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font></Text>
                </children></VBox>
          </content>
          <effect>
