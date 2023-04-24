@@ -5,12 +5,18 @@ import java.io.IOException;
 import org.htmlunit.WebClient;
 import org.htmlunit.html.HtmlPage;
 import org.htmlunit.html.HtmlSpan;
-
+import javafx.scene.text.TextFlow;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.text.Text;
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import javafx.scene.control.Hyperlink;
+
 
 public class SearchController {
     
@@ -46,8 +52,25 @@ public class SearchController {
     }
 
     public void updatePriceTags(String searchTerm, double prices[]) {
-        String azText = String.format("1aauto's first listing of %s is $%.2f", searchTerm, prices[0]);
-        String cText = String.format("1aauto's second listing of %s is $%.2f", searchTerm, prices[1]);
+        String azURL = "https://www.1aauto.com/search?q=" + searchTerm.replace(' ', '+');
+        Hyperlink azLink = new Hyperlink("View on 1A Auto" );
+        String azText = String.format("1aauto's first listing of %s is $%.2f use this link " + azURL + " to ", searchTerm, prices[0]);
+        String cText = String.format("1aauto's second listing of %s is $%.2f use this link " +azURL + " to view on 1A Auto", searchTerm, prices[1]);
+//create hyperlink with URL
+azLink.setOnAction(e -> {
+    try {
+        Desktop.getDesktop().browse(new URI(azURL));
+    }catch (IOException | URISyntaxException ex) {
+        ex.printStackTrace();
+    }
+});
+// set hyperlink to text
+azText += " ";
+azLink.setText("view on 1A Auto");
+azLink.setStyle("-fx-text-fill: blue; -fx-underline: true;");
+azText += azLink.getText();
+Text azTextDisplay = new Text(azText);
+TextFlow azDisplay = new TextFlow(azTextDisplay, azLink);
 
         onePriceTag.setText(azText);
         twoPriceTag.setText(cText);
