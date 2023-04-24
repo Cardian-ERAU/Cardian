@@ -93,6 +93,7 @@ public class Controller {
             problemText.setOpacity(1);
             problemText.setText(problemSuggestion);
             nextButton.setOpacity(1);
+            nextButton.setDisable(false);
             prevButton.setOpacity(0.6);
             prevButton.setDisable(true);
 

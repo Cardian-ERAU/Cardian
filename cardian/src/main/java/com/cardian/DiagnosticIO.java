@@ -30,7 +30,11 @@ public class DiagnosticIO {
         Stack values = new Stack();
         boolean isFirstOrLast = false;
 
-        count += direction;
+        if (direction != 0) {
+            count += direction;
+        } else {
+            count = direction;
+        }
         suggestion = data[count][choiceNum-1];
         if (suggestion.equals("null")) {
             suggestion = "Consult a Mechanic for further solutions";
